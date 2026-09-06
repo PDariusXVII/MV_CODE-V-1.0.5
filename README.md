@@ -36,7 +36,7 @@ Para compilar e testar diretamente no celular via cabo USB:
 ---
 
 ## 🚀 3. ⚙️ Configuração Inicial e Execução Automatizada
-Para configurar e rodar o projeto rapidamente no Windows, siga as instruções abaixo:
+Para configurar e rodar o projeto rapidamente no Android, siga as instruções abaixo:
 
 1. Extração e Execução
 Extraia o arquivo ZIP recebido.
