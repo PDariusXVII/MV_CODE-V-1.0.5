@@ -73,38 +73,31 @@ Para compilar e testar diretamente no celular via cabo USB:
 
 
 
-## 🚀 3. ⚙️ Configuração Inicial e Execução Automatizada
-
+🚀 3. ⚙️ Configuração Inicial e Execução Automatizada
 Para configurar e rodar o projeto rapidamente no Android, siga as instruções abaixo:
 
-
-
-1. Extração e Execução
-
+Passo 1: Extração e Permissão do Script
 Extraia o arquivo ZIP recebido.
 
-Entre diretamente na pasta extraída (não é necessário navegar por subpastas).
+Certifique-se de entrar diretamente na pasta raiz extraída (onde o arquivo setup_windows.ps1 está localizado, sem navegar por subpastas desnecessárias).
 
-Abra o PowerShell na raiz da pasta e execute os comandos de configuração:
+Abra o PowerShell nessa mesma pasta raiz.
 
+Libere a execução de scripts no PowerShell (necessário apenas para a sessão atual) colando o comando abaixo e apertando Enter:
+
+PowerShell
 Set-ExecutionPolicy -Scope Process Bypass
+Execute o script de configuração automatizada:
 
+PowerShell
 .\setup_windows.ps1
+Passo 2: Limpeza, Dependências e Execução do Flutter
+Assim que o script de configuração terminar de rodar com sucesso, limpe o cache, restaure as dependências do projeto e inicie a execução no seu dispositivo Android conectado executando os comandos em sequência:
 
-
-
-2. Limpeza e Execução do Flutter
-
-Assim que o script de configuração terminar, limpa o cache, restaure as dependências e inicie o projeto executando:
-
-
-
+PowerShell
 flutter clean
-
 flutter pub get
-
 flutter run
-
 
 
 
